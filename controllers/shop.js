@@ -10,10 +10,6 @@ const Order = require('../models/order');
 const Product = require('../models/product');
 const User = require('../models/user');
 
-
-
-
-
 const ITEMS_PER_PAGE = 3;
 
 const stripe = require('stripe')(
