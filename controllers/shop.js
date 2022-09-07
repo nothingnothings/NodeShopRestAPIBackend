@@ -83,11 +83,6 @@ exports.getFatura = (req, res, _next) => {
 
   Order.findById(ObjectId(orderId)).then((order) => {
     if (!order) {
-      // req.flash('error', 'Your order could not be found.');
-      // res.status(404).json({
-      //   message: 'Your order could not be found',
-      //   redirect: true,
-      // });
     } else {
       if (order.user.userId.toString() !== userId.toString()) {
         res.status(404).json({
