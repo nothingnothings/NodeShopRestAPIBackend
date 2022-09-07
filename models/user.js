@@ -16,15 +16,33 @@ const userSchema = new Schema({
     required: true,
   },
 
+  // cart: {
+  //   products: [
+  //     {
+  //       productId: {
+  //         type: Schema.Types.ObjectId,
+  //         ref: 'Product',
+  //         required: true,
+  //       },
+  //       quantity: { type: Number, required: true },
+  //     },
+  //   ],
+  // },
   cart: {
     products: [
       {
-        productId: {
-          type: Schema.Types.ObjectId,
-          ref: 'Product',
-          required: true,
-        },
-        quantity: { type: Number, required: true },
+        type: new Schema({
+          productId: {
+            type: Schema.Types.ObjectId,
+            ref: 'Product',
+            required: true,
+          },
+          quantity: { type: Number, required: true },
+        }, 
+        {
+          timestamps: true
+        }
+        )
       },
     ],
   },
