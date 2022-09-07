@@ -1,4 +1,7 @@
 const fs = require('fs');
+const path = require('path');
+const pdfPath = path.join(__dirname, '..', 'faturas');
+
 const PDFDocument = require('pdfkit');
 
 const ObjectId = require('mongodb').ObjectId;
@@ -7,9 +10,9 @@ const Order = require('../models/order');
 const Product = require('../models/product');
 const User = require('../models/user');
 
-const path = require('path');
 
-const pdfPath = path.join(__dirname, '..', 'faturas');
+
+
 
 const ITEMS_PER_PAGE = 3;
 
