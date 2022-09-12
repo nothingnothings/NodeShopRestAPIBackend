@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+const keys = require('../config/keys');
 const User = require('../models/user.js');
 
 exports.login = (req, res, next) => {
@@ -29,7 +30,7 @@ exports.login = (req, res, next) => {
       } else {
         const token = jwt.sign(
           { email: loadedUser.email, userId: loadedUser._id },
-          'zVzS42wNmzOOmlRgYCNWE1dxTH4n_sL6JuDnNj2srF2B7YxRsAgVmvqO8z14Wd3nzOqXzseBAjJ7PA5RSzjs0GsdrR5nxrVu8NPQJjooJLq2GqEl4h9JxwJ8zg5d_Fl2l3Q3n8yf13Gydum25V3mYRUy--L1EskSMs2PcEXLOJM',
+          keys.jwtSecret,
           { expiresIn: '1h' }
         );
         res.status(200).json({

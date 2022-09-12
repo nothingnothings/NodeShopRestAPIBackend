@@ -1,19 +1,14 @@
 const path = require('path');
-
 const express = require('express');
-
 const bodyParser = require('body-parser');
-
-const multer = require('multer');
-
-const mongoose = require('mongoose');
-
-const uuid = require('uuid').v4;
-
 const app = express();
 
-const MONGODB_URI =
-  'mongodb+srv://madblorga:papanacuas@cluster0.nhtjo.mongodb.net/nodeShopRestAPI?retryWrites=true&w=majority';
+const multer = require('multer');
+const mongoose = require('mongoose');
+const uuid = require('uuid').v4;
+
+const keys = require('./config/keys');
+const MONGODB_URI = keys.MONGODB_URI;
 
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
