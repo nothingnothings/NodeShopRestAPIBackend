@@ -13,8 +13,6 @@ const keys = require('../config/keys');
 
 const ITEMS_PER_PAGE = 3;
 
-
-
 const stripe = require('stripe')(
   keys.stripeTestKey
 );
