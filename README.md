@@ -97,7 +97,6 @@ The REST API backend's directory structure:
 ├── util\
 │   └── path.js
 │
-├── .gitignore
 ├── README.md
 ├── app.js
 ├── package-lock.json
