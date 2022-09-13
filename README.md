@@ -1,4 +1,4 @@
-<h1 align="center">NodeShop - A Node.js-inspired online shop, powered by Node.js (Express.js).</h1>
+<h1 align="center">NodeShop - A Node.js-inspired online shop, powered by Node.js (Express.js)</h1>
 <p align="center">
   <img src="images/NodeShopBlack.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
@@ -110,62 +110,32 @@ The package.json file used in the project:
 
 ```
 {
-  "name": "node-shop-rest-api",
-  "version": "0.2.0",
-  "private": true,
-  "homepage": "https://nothingnothings.github.io/NodeShopRestAPI",
-  "dependencies": {
-    "@fortawesome/free-regular-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@reduxjs/toolkit": "^1.8.3",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/react-fontawesome": "^1.6.5",
-    "axios": "^0.27.2",
-    "bootstrap": "^5.2.0",
-    "font-awesome": "^4.7.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.4.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.0.2",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "react-stripe-checkout": "^2.6.3",
-    "redux": "^4.2.0",
-    "redux-thunk": "^2.4.1",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "nodejs-restapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.15",
-    "gh-pages": "^4.0.0"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.15",
+    "pdfkit": "^0.13.0",
+    "stripe": "^10.0.0",
+    "uuid": "^8.3.2"
   }
 }
+
 ```
 
 ## Setup 
