@@ -1,7 +1,3 @@
-# NodeShopRestAPIBackend
-The backend portion of the REST API app  "NodeShop"(seen in the link https://nothingnothings.github.io/NodeShopRestAPI), built with Node.js (Express.js framework) and hosted on Heroku.
-
-
 <h1 align="center">NodeShop - A Node.js-inspired online shop, built with ReactJS.</h1>
 <p align="center">
   <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
