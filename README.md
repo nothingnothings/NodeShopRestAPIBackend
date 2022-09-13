@@ -28,18 +28,19 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  
 ## Technologies 
  
- Some of the Languages and Libraries employed:
+ Some of the Languages, Packages and Libraries employed on this backend:
  
- - Node Package Manager (for bootstrapping and managing the React App)
- - HTML5 
- - CSS3 (animations, Flexbox, media queries)
- - ReactJS (JavaScript Library, app built entirely of React components)
- - React Router (for the navigation between the different "pages" of the app)
- - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
- - Bootstrap (mainly for parts of the Footer component)
+ - Node
+ - Express.js (middleware-based Node.js framework; used for setting up backend endpoints)
+ - Node Package Manager (for bootstrapping and managing the Node backend app)
  - MongoDB (noSQL database storage solution; storage of `user`, `product` and `order` objects into collections in a remote MongoDB Atlas database)
- - Font Awesome
- - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
+ - `body-parser` (needed for the parsing of the JSON data sent by the frontend)
+ - `bcryptjs` (used for storing encrypted passwords inside of `user` documents on MongoDB database)
+ - `multer` - used for receiving product image files, on the "Add a Product" endpoint (disabled on this demo version of the app)
+ - `jsonwebtoken` (for the generation of JSON Web Tokens, which are then stored on the local storage of the user's browser and then checked for authentication)
+ - `pdfkit` (generation of pdf documents for each `order` produced by a user)
+ - Stripe (dummy integration of stripe with app, for the handling of "orders" made by the user)
+ - `express-validator` (validation of inputted user data, on the backend, with methods such as "isEmpty()" and "isLength()")
  
  
 ## Project Directory Structure
@@ -129,7 +130,6 @@ The package.json file used in the project:
     "mongodb": "^4.8.1",
     "mongoose": "^6.5.1",
     "multer": "^1.4.5-lts.1",
-    "nodemon": "^2.0.15",
     "pdfkit": "^0.13.0",
     "stripe": "^10.0.0",
     "uuid": "^8.3.2"
