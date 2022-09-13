@@ -22,7 +22,7 @@ The backend of ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI),
 The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, assisted by the GitHub Actions feature.
 This app is also available as a "multi-page" app, without ReactJS and without a REST API backend. The project can be found [here](https://github.com/nothingnothings/NodeShopMultiPageApp).
 
-The backend of the app, as its name suggests, utilizes Node.js (with the Express.js framework) and is hosted on the Heroku platform. The serverside code can be found [here](https://github.com/nothingnothings/NodeShopRestAPIBackend).
+The backend of the app, as its name suggests, utilizes Node.js (with the Express.js framework) and is hosted on the Heroku platform.
 
 
  
