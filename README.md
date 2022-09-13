@@ -2,8 +2,8 @@
 <p align="center">
   <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
-  <i>This website is an example/demonstration of the sort of online shops that can be built 
-    <br>with the ReactJS library, when coupled with a Node.js Backend.</i>
+  <i>This application is the backend portion of the NodeShop REST API app, built with 
+    <br>Node.js (Express.js) and a noSQL database solution, MongoDB (MongoDB Atlas).</i>
   <br>
 </p>
 
