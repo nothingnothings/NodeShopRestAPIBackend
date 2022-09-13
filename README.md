@@ -1,6 +1,6 @@
 <h1 align="center">NodeShop - A Node.js-inspired online shop, powered by Node.js (Express.js).</h1>
 <p align="center">
-  <img src="images/NodeShopBlack" alt="NodeShop-logo" width="120px" height="120px"/>
+  <img src="images/NodeShopBlack.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
   <i>This application is the backend portion of the NodeShop REST API app, built with 
     <br>Node.js (Express.js), helped by a noSQL database solution (MongoDB) and hosted on Heroku.</i>
