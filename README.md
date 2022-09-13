@@ -3,7 +3,7 @@
   <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
   <i>This application is the backend portion of the NodeShop REST API app, built with 
-    <br>Node.js (Express.js), a noSQL database solution (MongoDB) and hosted on Heroku.</i>
+    <br>Node.js (Express.js), helped by a noSQL database solution (MongoDB) and hosted on Heroku.</i>
   <br>
 </p>
 
