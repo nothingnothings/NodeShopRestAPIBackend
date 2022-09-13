@@ -22,7 +22,7 @@
 
 ![NodeShop](snapshot/NodeShop2.png)
 
-The backend of NodeShop REST API, the frontend Single Page Application (SPA) built with the ReactJS (create-react-app) library.
+The backend of ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI), the frontend Single Page Application (SPA) project built with the ReactJS (create-react-app) library.
 
 The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, assisted by the GitHub Actions feature.
 This app is also available as a "multi-page" app, without ReactJS. The project can be found [here](www.dummy.com).
