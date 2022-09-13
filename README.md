@@ -44,255 +44,28 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  
 ## Project Directory Structure
 
-The development environment (with the use of the `create-react-app` tool/workflow):
-
-
-```
-
-.\
-│
-├── public\
-│   │
-│   ├── images\
-│   │   ├── 1658431838529-Bike.png
-│   │   ├── 1658432590831-Boat.png
-│   │   ├── 1658433107407-Pencil.png
-│   │   ├── 1658433305838-Skateboard.png
-│   │   ├── 1658433495040-keyboard.png
-│   │   ├── 1658434189280-A set of tires.png
-│   │   ├── 1658434649972-Boomerang.png
-│   │   ├── 1658435067043-Drums.png
-│   │   └── 1658435608982-Violin.png
-│   │
-│   ├── 404.html
-│   ├── NodeShopBlack.png
-│   ├── apple-touch-icon.png
-│   ├── browserconfig.xml
-│   ├── favicon-16x16.png
-│   ├── favicon-32x32.png
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   ├── mstile-150x150.png
-│   └── site.webmanifest
-│
-├── src\
-│   │
-│   ├── components\
-│   │   │
-│   │   ├── Backdrop\
-│   │   │   ├── Backdrop.css
-│   │   │   └── Backdrop.js
-│   │   │
-│   │   ├── Cart\
-│   │   │   │
-│   │   │   ├── CartItemList\
-│   │   │   │   │
-│   │   │   │   ├── CartItem\
-│   │   │   │   │   ├── CartItem.css
-│   │   │   │   │   └── CartItem.js
-│   │   │   │   │
-│   │   │   │   ├── CartItemList.css
-│   │   │   │   └── CartItemList.js
-│   │   │   │
-│   │   │   ├── NoProduct\
-│   │   │   │   ├── NoProduct.css
-│   │   │   │   └── NoProduct.js
-│   │   │   │
-│   │   │   ├── Cart.css
-│   │   │   └── Cart.js
-│   │   │
-│   │   ├── Footer\
-│   │   │   ├── Footer.css
-│   │   │   └── Footer.js
-│   │   │
-│   │   ├── Grid\
-│   │   │   ├── Grid.css
-│   │   │   └── Grid.js
-│   │   │
-│   │   ├── Navigation\
-│   │   │   │
-│   │   │   ├── MainNavigation\
-│   │   │   │   ├── MainNavigation.css
-│   │   │   │   └── MainNavigation.js
-│   │   │   │
-│   │   │   ├── MobileNavigation\
-│   │   │   │   ├── MobileNavigation.css
-│   │   │   │   └── MobileNavigation.js
-│   │   │   │
-│   │   │   ├── NavigationItems\
-│   │   │   │   │
-│   │   │   │   ├── NavigationItem\
-│   │   │   │   │   ├── NavigationItem.css
-│   │   │   │   │   └── NavigationItem.js
-│   │   │   │   │
-│   │   │   │   ├── NavigationItems.css
-│   │   │   │   └── NavigationItems.js
-│   │   │   │
-│   │   │   └── SideDrawer\
-│   │   │       │
-│   │   │       └── DrawerToggle\
-│   │   │           ├── DrawerToggle.css
-│   │   │           └── DrawerToggle.js
-│   │   │
-│   │   │
-│   │   │
-│   │   ├── OrderBoard\
-│   │   │   │
-│   │   │   ├── Orders\
-│   │   │   │   │
-│   │   │   │   ├── OrdersItem\
-│   │   │   │   │   ├── OrdersItem.css
-│   │   │   │   │   └── OrdersItem.js
-│   │   │   │   │
-│   │   │   │   ├── Orders.css
-│   │   │   │   └── Orders.js
-│   │   │   │
-│   │   │   ├── OrderBoard.css
-│   │   │   └── OrderBoard.js
-│   │   │
-│   │   ├── Pagination\
-│   │   │   ├── Pagination.css
-│   │   │   └── Pagination.js
-│   │   │
-│   │   ├── ProductItem\
-│   │   │   │
-│   │   │   ├── Hexagon\
-│   │   │   │   ├── Hexagon.css
-│   │   │   │   └── Hexagon.js
-│   │   │   │
-│   │   │   ├── ProductBox\
-│   │   │   │   ├── ProductBox.css
-│   │   │   │   └── ProductBox.js
-│   │   │   │
-│   │   │   ├── ProductItem.css
-│   │   │   └── ProductItem.js
-│   │   │
-│   │   ├── ProductList\
-│   │   │   ├── ProductList.css
-│   │   │   └── ProductList.js
-│   │   │
-│   │   ├── Toolbar\
-│   │   │   ├── Toolbar.css
-│   │   │   └── Toolbar.js
-│   │   │
-│   │   ├── UI\
-│   │   │   │
-│   │   │   ├── Button\
-│   │   │   │   ├── Button.css
-│   │   │   │   └── Button.js
-│   │   │   │
-│   │   │   ├── Input\
-│   │   │   │   ├── Input.css
-│   │   │   │   └── Input.js
-│   │   │   │
-│   │   │   └── Spinner\
-│   │   │       ├── Spinner.css
-│   │   │       └── Spinner.js
-│   │   │
-│   │   │
-│   │   └── Wrapper\
-│   │       ├── Wrapper.css
-│   │       └── Wrapper.js
-│   │
-│   │
-│   ├── hoc\
-│   │   │
-│   │   ├── Auxiliary\
-│   │   │   └── Auxiliary.js
-│   │   │
-│   │   ├── Layout\
-│   │   │   ├── Layout.css
-│   │   │   └── Layout.js
-│   │   │
-│   │   └── ScrollToTop\
-│   │       └── ScrollToTop.js
-│   │
-│   │
-│   ├── pages\
-│   │   │
-│   │   ├── Admin-Shop\
-│   │   │   ├── Admin-Shop.css
-│   │   │   └── AdminShop.js
-│   │   │
-│   │   ├── Auth\
-│   │   │   │
-│   │   │   ├── Logout\
-│   │   │   │   └── Logout.js
-│   │   │   │
-│   │   │   ├── Auth.css
-│   │   │   └── Auth.js
-│   │   │
-│   │   ├── Cart\
-│   │   │   ├── Cart.css
-│   │   │   └── Cart.js
-│   │   │
-│   │   ├── Checkout\
-│   │   │   ├── Checkout.css
-│   │   │   └── Checkout.js
-│   │   │
-│   │   ├── Landing-Page\
-│   │   │   ├── Landing-Page.css
-│   │   │   └── Landing-Page.js
-│   │   │
-│   │   ├── Orders\
-│   │   │   ├── Orders.css
-│   │   │   └── Orders.js
-│   │   │
-│   │   ├── Product-Detail\
-│   │   │   ├── ProductDetail.css
-│   │   │   └── ProductDetail.js
-│   │   │
-│   │   ├── ProductEditor\
-│   │   │   ├── ProductEditor.css
-│   │   │   └── ProductEditor.js
-│   │   │
-│   │   └── Shop\
-│   │       ├── Shop.css
-│   │       └── Shop.js
-│   │
-│   │
-│   ├── shared\
-│   │   └── util.js
-│   │
-│   ├── store\
-│   │   │
-│   │   ├── actions\
-│   │   │   ├── auth.js
-│   │   │   ├── authActionTypes.js
-│   │   │   ├── cart.js
-│   │   │   ├── cartActionTypes.js
-│   │   │   ├── order.js
-│   │   │   ├── orderActionTypes.js
-│   │   │   ├── shop.js
-│   │   │   └── shopActionTypes.js
-│   │   │
-│   │   └── reducers\
-│   │       ├── authReducer.js
-│   │       ├── cartReducer.js
-│   │       ├── orderReducer.js
-│   │       └── shopReducer.js
-│   │
-│   │
-│   ├── App.js
-│   ├── axios-orders.js
-│   ├── index.css
-│   └── index.js
-│
-├── .gitignore
-├── README.md
-├── package-lock.json
-└── package.json
-```
-
-
-The `create-react-app` workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
+The backend's directory structure :
 
 
 ```
 .\
+│
+├── config\
+│   ├── keys.js
+│   └── prod.js
+│
+├── controllers\
+│   ├── admin.js
+│   ├── auth.js
+│   └── shop.js
+│
+├── faturas\
+│   ├── fatura-62e04d5c7ae0d991d83b1323.pdf
+│   ├── fatura-62e18ad75511c94e87929855.pdf
+│   ├── fatura-62e1a06e5511c94e87929fa4.pdf
+│   ├── fatura-62eb1fa9e4c7306961ced46b.pdf
+│   ├── fatura-62fc5a5c928dcb70525b5e11.pdf
+│   └── fatura-62fc5a897fbf69bdbe21af55.pdf
 │
 ├── images\
 │   ├── 1658431838529-Bike.png
@@ -303,37 +76,33 @@ The `create-react-app` workflow's production output, as shown in the `gh-pages` 
 │   ├── 1658434189280-A set of tires.png
 │   ├── 1658434649972-Boomerang.png
 │   ├── 1658435067043-Drums.png
-│   └── 1658435608982-Violin.png
+│   ├── 1658435608982-Violin.png
+│   └── NodeShopBlack.png
 │
-├── static\
-│   │
-│   ├── css\
-│   │   ├── main.fa8e2a93.css
-│   │   └── main.fa8e2a93.css.map
-│   │
-│   └── js\
-│       ├── main.4e33800d.js
-│       ├── main.4e33800d.js.LICENSE.txt
-│       └── main.4e33800d.js.map
+├── middleware\
+│   └── is-auth.js
 │
-├── .nojekyll
-├── 404.html
-├── NodeShopBlack.png
-├── apple-touch-icon.png
-├── asset-manifest.json
-├── browserconfig.xml
-├── favicon-16x16.png
-├── favicon-32x32.png
-├── favicon.ico
-├── index.html
-├── logo192.png
-├── logo512.png
-├── manifest.json
-├── mstile-150x150.png
-└── site.webmanifest
+├── models\
+│   ├── order.js
+│   ├── product.js
+│   └── user.js
+│
+├── public\
+│
+├── routes\
+│   ├── admin.js
+│   ├── auth.js
+│   └── shop.js
+│
+├── util\
+│   └── path.js
+│
+├── .gitignore
+├── README.md
+├── app.js
+├── package-lock.json
+└── package.json
 ```
-
-
 
 
 ## Project Configuration Files (package.json)
