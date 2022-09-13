@@ -153,9 +153,9 @@ To use this project, clone it using Git:
 
 ## Features 
 
-- Single-Page Application, no page reloads, REST API, serving of a single HTML file (ReactJS)
+- Connected to a Single-Page Application ( no page reloads, REST API); serving of a single HTML file (index.html file, "skeleton" for the ReactJS components)
 - For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials `exemplo@exemplo.com` (email field) and `exemplo` (password field). Creation of additional users ("No account? Join NodeShop") is possible in the complete app (in this demo app, the account creation endpoints are disabled). Furthermore, the "Orders" made by the user are reset every 60 minutes (MongoDB Time to Live Index feature), and the products added to the "Cart", every 8 hours (MongoDB "Scheduled Trigger" feature)
-- Serverside Form validation logic, powered by `express-validator`
+- Serverside form validation logic, powered by `express-validator`
 - Simple pagination logic for the list of products
 - Backend uses and manages the "User", "Product", "Order" and "Cart" objects, which are stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
