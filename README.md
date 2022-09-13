@@ -153,21 +153,12 @@ To use this project, clone it using Git:
 
 ## Features 
 
-- Single-Page Application, no page reloads, single HTML file (ReactJS)
-- Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
-- Hexagon-inspired design, created with CSS
-- CSS-animated SVG logo on landing page
-- Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
-- Responsive design (adaptive, mobile and desktop support) created with Flexbox and media queries
-- Usage of GitHub Actions and GitHub Pages with the `create-react-app` utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/NodeShopRestAPI/.
+- Single-Page Application, no page reloads, REST API, serving of a single HTML file (ReactJS)
 - For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials `exemplo@exemplo.com` (email field) and `exemplo` (password field). Creation of additional users ("No account? Join NodeShop") is possible in the complete app (in this demo app, the account creation endpoints are disabled). Furthermore, the "Orders" made by the user are reset every 60 minutes (MongoDB Time to Live Index feature), and the products added to the "Cart", every 8 hours (MongoDB "Scheduled Trigger" feature)
-- Working "Shopping Cart" feature ("Add" and "Remove" products feature, with interactive "number of items" icon, synchronized with the global Redux state), implemented with `react-redux`
-- Form validation logic, powered by ReactJS's state management, in the "Get Started" page
+- Serverside Form validation logic, powered by `express-validator`
 - Simple pagination logic for the list of products
-- Page redirection, made possible by the usage of React Router
-- Usage of Axios for communication with the Node.js (Express.js) backend, which manages the "User", "Product", "Order" and "Cart" objects, stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
+- Backend uses and manages the "User", "Product", "Order" and "Cart" objects, which are stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
-- Animated custom "Loading..." Spinner
 - Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
 
 
