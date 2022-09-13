@@ -17,11 +17,6 @@
 
 ## Introduction
 
-![NodeShop](snapshot/NodeShop1.png)
-
-
-![NodeShop](snapshot/NodeShop2.png)
-
 The backend of ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI), the frontend Single Page Application (SPA) project built with the ReactJS (create-react-app) library.
 
 The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, assisted by the GitHub Actions feature.
