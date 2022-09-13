@@ -34,12 +34,13 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  - Express.js (middleware-based Node.js framework; used for setting up backend endpoints)
  - Node Package Manager (for bootstrapping and managing the Node backend app)
  - MongoDB (noSQL database storage solution; storage of `user`, `product` and `order` objects into collections in a remote MongoDB Atlas database)
+ - Stripe (dummy integration of the Stripe payment platform with the app, for the handling of "orders" made by the user)
  - `body-parser` (needed for the parsing of the JSON data sent by the frontend)
  - `bcryptjs` (used for storing encrypted passwords inside of `user` documents on MongoDB database)
  - `multer` - used for receiving product image files, on the "Add a Product" endpoint (disabled on this demo version of the app)
  - `jsonwebtoken` (for the generation of JSON Web Tokens, which are then stored on the local storage of the user's browser and then checked for authentication)
  - `pdfkit` (generation of pdf documents for each `order` produced by a user)
- - Stripe (dummy integration of stripe with app, for the handling of "orders" made by the user)
+
  - `express-validator` (validation of inputted user data, on the backend, with methods such as "isEmpty()" and "isLength()")
  
  
