@@ -145,9 +145,9 @@ The package.json file used in the project:
 To use this project, clone it using Git:
 
 1. Run `git clone` to clone the project into your local Git repository
-2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
-3. Run `npm run build` to create the production/deployment version of the app (outputted in `/build`)
-4. Serve the production files locally or on the web, with the help of a hosting provider (although great part of the app relies/depends on the backend's data, which in the case of this demo, is served by a Node.js (Express.js) server, hosted on Heroku)
+2. Run `npm install` to install all dependencies (`express`, `bcryptjs`, `mongodb`, etc)
+3. Run `npm start` to spin up the the app
+4. Use the server locally or deploy it on the web, with the help of a hosting provider (e.g. Heroku)
 5. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's various features
 
 
