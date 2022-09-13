@@ -19,10 +19,8 @@
 
 The backend of ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI), the frontend Single Page Application (SPA) project built with the ReactJS (create-react-app) library.
 
-The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, assisted by the GitHub Actions feature.
+The app, as its name suggests, was created using Node.js and the Express.js framework, and its contents were hosted in the Heroku platform, connected to GitHub.
 This app is also available as a "multi-page" app, without ReactJS and without a REST API backend. The project can be found [here](https://github.com/nothingnothings/NodeShopMultiPageApp).
-
-The backend of the app, as its name suggests, utilizes Node.js (with the Express.js framework) and is hosted on the Heroku platform.
 
 
  
@@ -40,7 +38,6 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  - `multer` - used for receiving product image files, on the "Add a Product" endpoint (disabled on this demo version of the app)
  - `jsonwebtoken` (for the generation of JSON Web Tokens, which are then stored on the local storage of the user's browser and then checked for authentication)
  - `pdfkit` (generation of pdf documents for each `order` produced by a user)
-
  - `express-validator` (validation of inputted user data, on the backend, with methods such as "isEmpty()" and "isLength()")
  
  
