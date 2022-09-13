@@ -1,4 +1,4 @@
-<h1 align="center">NodeShop - A Node.js-inspired online shop, built with ReactJS.</h1>
+<h1 align="center">NodeShop - A Node.js-inspired online shop, powered by Node.js (Express.js).</h1>
 <p align="center">
   <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
