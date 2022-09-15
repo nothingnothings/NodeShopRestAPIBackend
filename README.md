@@ -29,7 +29,7 @@ This app is also available as a "multi-page" app, without ReactJS and without a 
  Some of the Languages, Packages and Libraries employed on this backend:
  
  - Node
- - Express.js (middleware-based Node.js framework; used for setting up backend endpoints)
+ - Express.js (middleware-based Node.js framework; used for an enhanced backend endpoint setup)
  - Node Package Manager (for bootstrapping and managing the Node backend app)
  - MongoDB (noSQL database storage solution; storage of `user`, `product` and `order` objects into collections in a remote MongoDB Atlas database)
  - Stripe (dummy integration of the Stripe payment platform with the app, for the handling of "orders" made by the user)
