@@ -52,7 +52,7 @@ userSchema.methods.deleteCartItem = function (productId) {
 
   return this.save()
     .then(() => {})
-    .catch((err) => {
+    .catch(() => {
     
     });
 };
