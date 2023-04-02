@@ -81,7 +81,7 @@ app.use(shopRoutes);
 
 app.post('/create-order', isAuth, shopController.createOrder);
 
-app.use((error, req, res, next) => {
+app.use((error, req, res) => {
   const status = error.statusCode || 500;
   const message = error.message;
   const data = error.data;
