@@ -22,6 +22,9 @@ The backend of ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI),
 The app, as its name suggests, was created using Node.js and the Express.js framework, and its contents were hosted in the Heroku platform, connected to GitHub.
 This app is also available as a "multi-page" app, without ReactJS and without a REST API backend. The project can be found [here](https://github.com/nothingnothings/NodeShopMultiPageApp).
 
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/NodeShopRestAPIBackend/master?style=flat-square)
+[![HitCount](https://hits.dwyl.com/nothingnothings/NodeShopRestAPIBackend.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/NodeShopRestAPIBackend)
+
 
  
 ## Technologies 
