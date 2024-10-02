@@ -23,7 +23,8 @@ The app, as its name suggests, was created using Node.js and the Express.js fram
 This app is also available as a "multi-page" app, without ReactJS and without a REST API backend. The project can be found [here](https://github.com/nothingnothings/NodeShopMultiPageApp).
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/NodeShopRestAPIBackend/master?style=flat-square)
-[![HitCount](https://hits.dwyl.com/nothingnothings/NodeShopRestAPIBackend.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/NodeShopRestAPIBackend)
+[![en](https://img.shields.io/badge/lang-en-red.svg?style=flat-square)](https://github.com/nothingnothings/NodeShopRestAPIBackend)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg?style=flat-square)](https://github.com/nothingnothings/NodeShopRestAPIBackend/blob/master/README.pt-br.md)
 
 
  
