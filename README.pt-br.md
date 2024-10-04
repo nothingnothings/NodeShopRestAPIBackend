@@ -3,7 +3,7 @@
   <img src="images/NodeShopBlack.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
   <i>Esta aplicação é a parte backend do aplicativo NodeShop REST API, construída com 
-    <br>Node.js (Express.js), apoiada por uma solução de banco de dados noSQL (MongoDB) e hospedada no Heroku.</i>
+    <br>Node.js (Express.js), apoiada por uma solução de banco de dados noSQL (MongoDB) e hospedada no Railway.</i>
   <br>
 </p>
 
@@ -19,7 +19,7 @@
 
 Este é o backend do ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI), projeto frontend Single Page Application (SPA) construído com a biblioteca ReactJS (create-react-app).
 
-Este aplicativo, como sugerido por seu nome, foi criado usando Node.js e o framework Express.js, e seu conteúdo foi hospedado na plataforma Heroku, conectada ao GitHub. Este aplicativo também está disponível como um aplicativo "multi-página", sem ReactJS e sem um backend REST API. O projeto multi-página pode ser encontrado [aqui](https://github.com/nothingnothings/NodeShopMultiPageApp).
+Este aplicativo, como sugerido por seu nome, foi criado usando Node.js e o framework Express.js, e seu conteúdo foi hospedado na plataforma Railway, conectada ao GitHub. Este aplicativo também está disponível como um aplicativo "multi-página", sem ReactJS e sem um backend REST API. O projeto multi-página pode ser encontrado [aqui](https://github.com/nothingnothings/NodeShopMultiPageApp).
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/NodeShopRestAPIBackend/master?style=flat-square)
 [![en](https://img.shields.io/badge/lang-en-red.svg?style=flat-square)](https://github.com/nothingnothings/NodeShopRestAPIBackend)
@@ -148,7 +148,7 @@ Para usar este projeto, clone-o usando o Git:
 1. Execute `git clone` para clonar o projeto em seu repositório local Git.
 2. Execute `npm install` para instalar todas as dependências (`express`, `bcryptjs`, `mongodb`, etc).
 3. Execute `npm start` para iniciar o aplicativo.
-4. Use o servidor localmente ou realize o deploy na web, com a ajuda de um provedor de hospedagem (por exemplo, Heroku).
+4. Use o servidor localmente ou realize o deploy na web, com a ajuda de um provedor de hospedagem (por exemplo, Railway).
 5. Para fins desta demonstração, na página "Get Started" (Autenticação), insira as credenciais `exemplo@exemplo.com` (email) e `exemplo` (senha) para acessar os vários recursos do aplicativo.
 
 
@@ -161,7 +161,7 @@ Para usar este projeto, clone-o usando o Git:
 - O backend utiliza e gerencia os objetos "User", "Product", "Order" e "Cart", que são armazenados em um banco de dados MongoDB (serviço MongoDB Atlas); o servidor Node.js e o banco de dados MongoDB também lidam com a lógica de autenticação (login/cadastro) implementada no aplicativo
 - Representação fictícia da possível integração de aplicativos de loja com Stripe, com o pacote `react-stripe-checkout` e a lógica correspondente do lado do servidor produzindo efeitos no frontend (redirecionamento de página e atualização visual da página de "pedidos")
 - Visualização das faturas de cada pedido em arquivos .pdf, produzidos pelo backend (pacote `pdfkit`)
-- Uso de variáveis de ambiente com Heroku para ocultar informações sensíveis (API_KEYS, segredos de Json Web Token, nomes de usuário e senhas de banco de dados, etc.)
+- Uso de variáveis de ambiente com Railway para ocultar informações sensíveis (API_KEYS, segredos de Json Web Token, nomes de usuário e senhas de banco de dados, etc.)
 
 
 ## Inspiration

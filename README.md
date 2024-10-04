@@ -3,7 +3,7 @@
   <img src="images/NodeShopBlack.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
   <i>This application is the backend portion of the NodeShop REST API app, built with 
-    <br>Node.js (Express.js), helped by a noSQL database solution (MongoDB) and hosted on Heroku.</i>
+    <br>Node.js (Express.js), helped by a noSQL database solution (MongoDB) and hosted on Railway.</i>
   <br>
 </p>
 
@@ -19,7 +19,7 @@
 
 The backend of ["NodeShop"](https://github.com/nothingnothings/NodeShopRestAPI), the frontend Single Page Application (SPA) project built with the ReactJS (create-react-app) library.
 
-The app, as its name suggests, was created using Node.js and the Express.js framework, and its contents were hosted in the Heroku platform, connected to GitHub.
+The app, as its name suggests, was created using Node.js and the Express.js framework, and its contents were hosted in the Railway platform, connected to GitHub.
 This app is also available as a "multi-page" app, without ReactJS and without a REST API backend. The project can be found [here](https://github.com/nothingnothings/NodeShopMultiPageApp).
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/NodeShopRestAPIBackend/master?style=flat-square)
@@ -148,7 +148,7 @@ To use this project, clone it using Git:
 1. Run `git clone` to clone the project into your local Git repository
 2. Run `npm install` to install all dependencies (`express`, `bcryptjs`, `mongodb`, etc)
 3. Run `npm start` to spin up the the app
-4. Use the server locally or deploy it on the web, with the help of a hosting provider (e.g. Heroku)
+4. Use the server locally or deploy it on the web, with the help of a hosting provider (e.g. Railway)
 5. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's various features
 
 
@@ -161,7 +161,7 @@ To use this project, clone it using Git:
 - Backend uses and manages the "User", "Product", "Order" and "Cart" objects, which are stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
 - Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
-- Usage of environment variables with Heroku to hide sensitive information (API_KEYS, Json Web Token secrets, database usernames and passwords, etc.)
+- Usage of environment variables with Railway to hide sensitive information (API_KEYS, Json Web Token secrets, database usernames and passwords, etc.)
 
 
 ## Inspiration
